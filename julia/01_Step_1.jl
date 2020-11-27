@@ -101,9 +101,7 @@ Then, we may think we have two iterative operations: one in space and one in tim
 "
 
 # ╔═╡ b2cce0e0-fb16-11ea-334b-f9204d71b63e
-begin
-	un = ones(NUMBER_OF_GRID_POINTS)
-	
+begin	
 	for n in range(1, length = NUMBER_OF_TIMESTEPS + 1)
 		un = copy(u)
 	    for i in range(2, length = NUMBER_OF_GRID_POINTS - 1)
